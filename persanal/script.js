@@ -1,3 +1,13 @@
+// toggle menu
+function toggleMenu(){
+  const nav = document.getElementById("navMenu");
+  if(nav){
+    nav.classList.toggle("active");
+  }else{
+    console.error("navMenu element not found");
+  }
+}
+
 // project information
 function openProject(title, img, desc, tags){
   document.getElementById("modalTitle").innerText = title;
@@ -54,8 +64,6 @@ window.addEventListener("click", function(e){
     closeCert();
   }
 });
-
-
 
 // Resume download (PDF error FIXED)
 document.addEventListener("DOMContentLoaded", () => {
