@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/jobphoto.jpg">
     <title>Rahul Chavan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">  
 </head>
 <body>
 <header class="main-header">
@@ -20,24 +21,23 @@
     <a href="#achievement">Achievement </a>
      <a href="#contact">Contact</a>
   </nav>
-
+ 
   <div class="header-actions">
     <a href="#" class="resume-btn" id="downloadResume">Resume</a>
-    <div class="settings">⚙</div>
+    <div class="settings" id="settingsBtn">⚙</div>
     <div class="menu" onclick="toggleMenu()">☰</div>
   </div>
 </header>
+
 <!-- hero section -->
 
 <section class="hero-section" id="home">
   <div class="hero-left">
     <span class="badge">Mern Stack Developer  </span>
-
     <h1>
       Hey! I'm <span>Rahul</span><br />
       A Tech Innovator
     </h1>
-
     <p>
       MERN Stack Developer (Fresher) with strong foundation in MongoDB, Express.js, React.js, and Node.js. Hands-on experience in building responsive web applications, REST APIs, and basic CRUD operations. Quick learner, passionate about web development, and eager to contribute to real-world projects while growing technical skills.
     </p>
@@ -50,22 +50,21 @@
 
   <!-- RIGHT SIDE -->
   <div class="hero-right">
-    <div class="orbit">
-      <img src="assets/jobphoto.jpg" class="profile" />
-
-      <span class="icon react">⚛</span>
-      <span class="icon html">🟧</span>
-      <span class="icon js">🟨</span>
-      <span class="icon node">🟩</span>
-      <span class="icon ai">🤖</span>
-    </div>
+  <div class="orbit">
+    <img src="assets/jobphoto.jpg" class="profile" />
+    <i class="bi bi-bootstrap icon react"></i>
+    <i class="bi bi-file-code-fill icon html"></i>
+    <i class="bi bi-filetype-js icon js"></i>
+    <i class="bi bi-node-plus icon node"></i>
+    <i class="bi bi-robot icon ai"></i>
   </div>
+</div>
+</div>
 </section>
 
 <!-- about section  -->
 <section class="about-section" id="about">
   <h2>About My <span>Journey</span></h2>
-
   <div class="about-container">
 
     <!-- LEFT : TIMELINE -->
@@ -374,33 +373,33 @@
 
     <!-- CERT 5 -->
     <div class="work-card" onclick="openCert(
-      'Web Development',
+      'Tech Master Competition',
       'assets/cert5.jpeg',
-      'Web development certification using HTML, CSS and JavaScript.',
+      'This certification is awarded for participating in the Tech Master Competition, a competitive technical event that evaluates participants on problem-solving, innovation, and practical application of modern technologies. The competition involved challenges across coding, software development, and technology-based projects, helping enhance technical skills and logical thinking.',
       ['HTML','CSS','JavaScript']
     )">
       <div class="work-img">
         <img src="assets/cert5.jpeg" alt="">
       </div>
       <div class="work-content">
-        <h3>Web Development</h3>
-        <p>Frontend fundamentals</p>
+        <h3>Tech Master Competition</h3>
+        <p>Participated in Tech Master Competition, demonstrating problem-solving and technical expertise.</p>
       </div>
     </div>
 
     <!-- CERT 6 -->
     <div class="work-card" onclick="openCert(
-      'Digital Marketing',
+      'Police Utsav Cricket Tournament',
       'assets/cert6.jpeg',
-      'Digital marketing certification including SEO & social media marketing.',
+      'Actively participated in the Police Utsav Cricket Tournament, showcasing teamwork, strategy, and cricketing abilities in a competitive sports environment.',
       ['SEO','SMO']
     )">
       <div class="work-img">
         <img src="assets/cert6.jpeg" alt="">
       </div>
       <div class="work-content">
-        <h3>Police Cricket Tournament</h3>
-        <p></p>
+        <h3>Police Utsav Cricket Tournament</h3>
+        <p>Participated in Police Utsav Cricket Tournament, demonstrating teamwork and sportsmanship.</p>
       </div>
     </div>
 
@@ -503,7 +502,5 @@
   </div>
 </footer>
 <script src="script.js"></script>
-
-
 </body>
 </html>
